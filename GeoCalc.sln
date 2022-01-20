@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoCalc", "GeoCalc\GeoCalc.csproj", "{417F6F1C-5E46-40F6-A419-54E711CA4833}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoCalcTests", "GeoCalcTests\GeoCalcTests.csproj", "{B37B3942-41A1-4E63-A816-A97660D5B622}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{417F6F1C-5E46-40F6-A419-54E711CA4833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{417F6F1C-5E46-40F6-A419-54E711CA4833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{417F6F1C-5E46-40F6-A419-54E711CA4833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{417F6F1C-5E46-40F6-A419-54E711CA4833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B37B3942-41A1-4E63-A816-A97660D5B622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B37B3942-41A1-4E63-A816-A97660D5B622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B37B3942-41A1-4E63-A816-A97660D5B622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B37B3942-41A1-4E63-A816-A97660D5B622}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54A727C7-F7C8-4455-AD54-C289172B8DF7}
+	EndGlobalSection
+EndGlobal
