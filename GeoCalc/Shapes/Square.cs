@@ -11,10 +11,10 @@ namespace GeoCalc.Shapes
         }
 
         /// <summary> Calculates perimiter of Square.</summary>
-        /// <returns> Side*4. </returns>
-        public float Perimeter() => Side * 4;
-        /// <summary> Calculates perimiter of Square.</summary>
-        /// <returns></returns>
+        /// <returns> Sum of all sides. </returns>
+        public float Perimeter() => Side + Side + Side + Side;
+        /// <summary> Calculates Area of Square.</summary>
+        /// <returns> Side * Side </returns>
         public float Area() => Side * Side;
     }
 }
