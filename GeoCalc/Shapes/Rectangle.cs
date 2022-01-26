@@ -3,8 +3,8 @@ namespace GeoCalc.Shapes
 {
     public class Rectangle : IShape
     {
-        float Height { get; set; } = 0;
-        float Width { get; set; } = 0;
+        float Height { get; }
+        float Width { get; }
 
         /// <summary> It's a rectangle :). </summary>
         public Rectangle(float height, float width)

@@ -4,12 +4,12 @@ namespace GeoCalc.Shapes
 {
     public class Triangle : IShape
     {
-        float SideA { get; }
-        float SideB { get; set; } = 0;
-        float SideC { get; set; } = 0;
+        float SideA { get; set; }
+        float SideB { get; }
+        float SideC { get; }
 
-        float Height { get; set; } = 0;
-        float Base { get; set; } = 0;
+        float Height { get; }
+        float Base { get; }
 
         /// <summary>
         /// A <see cref="Triangle"/> to be used when calculating perimeter.
