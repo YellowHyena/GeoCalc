@@ -1,11 +1,4 @@
 ﻿using GeoCalc.Interfaces;
-using GeoCalc.Shapes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace GeoCalc
 {
     public static class GeometricCalculator

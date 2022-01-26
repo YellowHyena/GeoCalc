@@ -2,16 +2,15 @@
 
 namespace GeoCalc.Shapes
 {
-    /// <summary> It's a triangle :) </summary>
-    /// <seealso cref="GeoCalc.Interfaces.IShape" />
     public class Triangle : IShape
     {
-        float SideA { get; set; } = 0;
+        float SideA { get; }
         float SideB { get; set; } = 0;
         float SideC { get; set; } = 0;
 
         float Height { get; set; } = 0;
         float Base { get; set; } = 0;
+
         /// <summary>
         /// A <see cref="Triangle"/> to be used when calculating perimeter.
         /// </summary>
@@ -35,11 +34,7 @@ namespace GeoCalc.Shapes
             Base = @base;
         }
 
-        /// <summary> Calculates the area of Triangle. </summary>
-        /// <returns> Height * Base / 2.</returns>
         public float Area() => Height * Base / 2;
-        /// <summary> Calculates the perimeter of Triangle. </summary>
-        /// <returns> SideA + SideB + SideC. </returns>
         public float Perimeter() => SideA + SideB + SideC;
     }
 }
