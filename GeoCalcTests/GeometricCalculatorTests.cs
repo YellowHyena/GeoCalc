@@ -56,16 +56,16 @@ namespace GeoCalc.Tests
             var shape = new Triangle(sideA: a, sideB: b, sideC: c);
             Assert.AreEqual(expected, GeometricCalculator.GetPerimeter(shape));
         }
-
         #endregion
 
         #region AreaTests
+
         [TestMethod()]
         [DataRow(1,1)]
         [DataRow(2,4)]
         [DataRow(0.5f,0.25f)]
         [DataRow(-2,4)]
-        [DataRow(float.MaxValue, float.PositiveInfinity)] //∞
+        [DataRow(float.MaxValue, float.PositiveInfinity)]
         public void GetAreaTest_Square(float side, float expected)
         {
             var shape = new Square(side: side);
@@ -113,7 +113,7 @@ namespace GeoCalc.Tests
         [TestMethod()]
         public void GetPerimeterTest_MultipleShapes()
         {
-            var expected = 32.5;
+            const float expected = 32.5f;
             var shape = new IShape[]
             {
                 new Circle(radius:2),
@@ -121,6 +121,14 @@ namespace GeoCalc.Tests
                 new Rectangle(height:3, width:2),
                 new Triangle(sideA:1, sideB:2, sideC:3)
             };
+            Assert.AreEqual(expected, GeometricCalculator.GetPerimeter(shape), 0.1);
+        }
+
+        [TestMethod()]
+        public void GetPerimeterTest_EmptyÄrray()
+        {
+            const float expected = 0;
+            var shape = System.Array.Empty<IShape>();
             Assert.AreEqual(expected, GeometricCalculator.GetPerimeter(shape), 0.1);
         }
         #endregion

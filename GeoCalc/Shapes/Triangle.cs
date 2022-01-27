@@ -4,7 +4,7 @@ namespace GeoCalc.Shapes
 {
     public class Triangle : IShape
     {
-        float SideA { get; set; }
+        float SideA { get; }
         float SideB { get; }
         float SideC { get; }
 
